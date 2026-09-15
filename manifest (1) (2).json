@@ -1,0 +1,43 @@
+{
+  "id": "com.custom.datecalendarwidget",
+  "version": "1.0.0",
+  "name": "Date Calendar Widget",
+  "description": "Calendar widget jo bound Date Dimension ki dates ko monthly calendar mein highlight karta hai. Sirf ek Dimension feed hai — koi Range ya Member selector nahi.",
+  "newInstancePrefix": "DateCalendar",
+  "vendor": "Custom",
+  "license": "",
+  "eula": "",
+  "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAA3NCSVQICAjb4U/gAAAAb1BMVEX///+ZmZl4dXdBPj9hYGGOjpE6ODo8OjwvLC0lISIpJSaMiooyLzH/cjMxLi9GREb/ZSk2MzV9fX1MSks4NjcrJyn/WR9ycnJRT1AtKiv/TRVdXF1ra2v7VCfJyMk+PD6tra+rqqtUUlU0MTNqaGpjxDg2AAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAKhJREFUGNM9z9EagiAMBeDpEGkWNAGhqFTq/Z8xwK/+q7PtZgeg6npEMcBPJ0d1Kmg6ZnFGRZcLESnR7tpoouuVSCPPZYHWee+XxTsrvQeYQrwV97tL5uZigMeoqucTUSnWEVBX4fWaW2BYz1W3bXsLDPldcD8MoYZ3glmMjNbGLJk5igDgnLTGHazdAPo1Gdms2bZXhRmbMuNR5rNWJuX075sMYg57jV94IQ2Xqt1atQAAAABJRU5ErkJggg==",
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "custom-calendar-widget",
+      "url": "REPLACE_WITH_YOUR_HOSTED_MAIN_JS_URL",
+      "integrity": "",
+      "ignoreIntegrity": true
+    }
+  ],
+  "properties": {
+    "width": {
+      "type": "integer",
+      "default": 360
+    },
+    "height": {
+      "type": "integer",
+      "default": 340
+    }
+  },
+  "methods": {},
+  "events": {},
+  "dataBindings": {
+    "myDateBinding": {
+      "feeds": [
+        {
+          "id": "dimensions",
+          "description": "Date Dimension",
+          "type": "dimension"
+        }
+      ]
+    }
+  }
+}
